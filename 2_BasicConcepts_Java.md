@@ -1,5 +1,8 @@
-# Java Keywords and Statements and More
+# Basic Concepts of Java
+
 ## word explanation
+- RAM: Random Access Memory, a type of computer memory that can be accessed randomly, meaning any byte of memory can be accessed without touching the preceding bytes.
+- primitive data types: basic data types provided by Java, such as int, float, double, char, boolean, byte, short, and long.
 - expression: a combination of variables, operators, and method calls that evaluates to a single value.
 - statement: a complete unit of execution that can include one or more expressions.
 - keyword: a reserved word that has a specific meaning and cannot be used for other purposes in the language.

@@ -67,3 +67,7 @@ yarn.lock
 
 # Local development directories
 .sass-cache/
+
+# ignore all pptx files
+*.pptx
+
