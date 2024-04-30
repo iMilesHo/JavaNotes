@@ -36,7 +36,7 @@ Also, you can use the right button of the mouse to click the code file, and then
 
 ## Calculation
 
-### What is the difference between compiled programming languages and interpreted programming languages?
+1. What is the difference between compiled programming languages and interpreted programming languages?
 
 - how their code is executed on a computer, which affects both the development process and the performance
 - Compiled programming Languages:
@@ -71,6 +71,32 @@ Also, you can use the right button of the mouse to click the code file, and then
     - complexity: JIT compiler is complex, requiring maintain
     - initial performance penalty: there can be a "warm-up" time where the JIT compiler is still processing parts of the bytecode
     - resource usage: JIT compilation can consume more memory and CPU resources than pure interpretation
+
+2. What is the difference between = and == in Java?
+
+- `=`: assignment operator, used to assign a value to a variable
+- `==`: equality operator, used to compare two values for equality
+  - primitive data types: actual values are compared
+  - reference data types: memory addresses are compared, not the actual values
+  - Note: `equals()` method should be used to compare the actual values of objects
+  - String has internal pool for the literal strings, so `==` can be used to compare the string literals (interning mechanism). But for the string objects created using `new` keyword, `==` should not be used.
+
+3. How to debug compilation errors in Java?
+
+- Read the error messages: compiler provides file name, line number, and a description of the error
+- check for common mistakes
+  - syntax errors: missing semicolons, parentheses, curly braces, etc.
+  - typos: misspelled keywords, variable names, method names, etc.
+  - type errors
+  - scope errors: variables out of scope
+  - case sensitivity: Java is case-sensitive
+- comment out code: isolate the recent changes or suspicious code
+- ensure the API usage is correct
+- compile often: fix errors as soon as they appear
+- use online resources: search for the error message online
+- learn from the error
+
+4. Symbol "/" for integer and floating-point division in Java?
 
 # Reference
 

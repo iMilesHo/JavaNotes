@@ -1,22 +1,36 @@
 public class challenge {
     public static void main(String[] args){
-        int myValue = 10000;
-        int myMinIntValue = Integer.MIN_VALUE;
+        System.out.println("Hello World");
+        testMethod();
     }
 
-    public static void displayHighScorePosition(String playerName, int position){
-        System.out.println("Player " + playerName + " managed to get into position " + position + " on the high score table. ");
-    }
-
-    public static int calculateHighScorePosition(int playerScore){
-        if(playerScore > 1000){
-            return 1;
-        } else if(playerScore > 500 && playerScore < 1000){
-            return 2;
-        } else if(playerScore > 100 && playerScore < 500){
-            return 3;
+    public static void testMethod(){
+        System.out.println("This is a test method");
+        
+        // declare a string
+        String myString = "Hello";
+        String myString1 = "Hello";
+        
+        if (myString == myString1){
+            System.out.println("They are equal");
         } else {
-            return 4;
+            System.out.println("They are not equal");
         }
+
+        String myString2 = new String("Hello");
+        String myString3 = new String("Hello");
+
+        if (myString2 == myString3) {
+            System.out.println("They are equal");
+        } else {
+            System.out.println("They are not equal");  // This will be the output.
+        }
+
+        // get the memory address of the string
+        System.out.println(System.identityHashCode(myString));
+        System.out.println(System.identityHashCode(myString1));
+        System.out.println(System.identityHashCode(myString2));
+
     }
+
 }
