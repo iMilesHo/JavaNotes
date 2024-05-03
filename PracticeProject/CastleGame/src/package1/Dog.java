@@ -1,10 +1,14 @@
 package package1;
 
-class Dog {
-    int age;
+public class Dog {
     public String name;
-    public Dog(int age, String name) {
-        this.age = age;
+    private int weight;
+    protected int idCode;
+    int age;
+    public Dog(String name, int weight, int idCode, int age) {
         this.name = name;
+        this.weight = weight;
+        this.idCode = idCode;
+        this.age = age;
     }
 }
